@@ -39,8 +39,16 @@ public class LoginPage extends JFrame{
 		}
 		System.out.println("총회원수:"+list.size());
     	
+//		Container con = this.getContentPane();
+//		con.setLayout(null);
+		
+        JPanel jp1 = new JPanel();
 		Container con = this.getContentPane();
-		con.setLayout(null);
+		con.setLayout(new BorderLayout());
+		con.add(jp1, BorderLayout.CENTER);
+	    jp1.setLayout(new FlowLayout());
+		jp1.add(lb2);jp1.add(jt1);
+		jp1.add(lb3);jp1.add(jt2);
 		
 		con.add(lb1); //라벨
 		lb1.setLocation(410,70);
