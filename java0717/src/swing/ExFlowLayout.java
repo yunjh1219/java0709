@@ -2,6 +2,10 @@ package swing;
 
 import java.awt.Container;
 import java.awt.FlowLayout;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8cb92dcb199b7ebfbb0e057620488c5abb54671e
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -23,8 +27,9 @@ public class ExFlowLayout extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
+
 	public static void main(String[] args) {
 		new ExFlowLayout();
-	}
 
-}
+	}
+	}
