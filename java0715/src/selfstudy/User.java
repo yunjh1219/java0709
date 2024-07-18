@@ -18,8 +18,6 @@ public class User {
 		return "[사용자 이름="+name+", 책="+books+"]";
 	}
 	
-	public void registerBook(Book books) {
-		books.add(books);
-	}
+
 	
 }

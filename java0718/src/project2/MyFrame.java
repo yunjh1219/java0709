@@ -19,7 +19,9 @@ public class MyFrame extends JFrame {
 	JTextArea ta = new JTextArea(20, 50);
 	JButton bt1 = new JButton("로그인"); JButton bt2 = new JButton("회원가입"); JButton bt3 = new JButton("예금");
 	JButton bt4 = new JButton("출금"); JButton bt5 = new JButton("잔고");
+	
 	MyFrame() {
+		
 		JPanel jp1 = new JPanel();
 		JPanel jp2 = new JPanel();
 		JPanel jp3 = new JPanel();
@@ -41,6 +43,7 @@ public class MyFrame extends JFrame {
 		this.setResizable(false);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 	}
 	
 	
