@@ -1,7 +1,6 @@
 //DB에 테이블 올림
 package java240719;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
