@@ -5,12 +5,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
+
 // 데이터베이스 접속
 String URL = "jdbc:mysql://localhost:3306/spring5fs";
 Connection conn = null;
 PreparedStatement pstmt = null;
 Class.forName("com.mysql.cj.jdbc.Driver");
 conn = DriverManager.getConnection(URL, "spring5", "spring5");
+
 //임시 저장 변수들
 String numTmp = "";
 String nameTmp = "";
@@ -120,7 +122,9 @@ while(rs.next()) {
 	double avg = tot / 3.0;
 %>	
 	<tr>
-	<td><a href="?find=<%=numTmp %>"><%=numTmp %></a></td><td><%=nameTmp %></td><td><%=korTmp %></td>
+	<td><a href="?find=<%=numTmp %>"><%=numTmp %></a></td>
+	
+    <td><%=nameTmp %></td><td><%=korTmp %></td>
 	<td><%=engTmp %></td><td><%=mathTmp %></td><td><%=tot %></td><td><%=avg %></td>
 	<td><button  onclick="location.href='?delete=<%=numTmp%>'" >삭제</button></td>
 	</tr>
