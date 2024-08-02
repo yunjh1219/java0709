@@ -6,7 +6,7 @@
     pageEncoding="UTF-8"%>
 <%
 //데이터베이스 접속
-String URL = "jdbc:mysql://localhost:3307/spring5fs";
+String URL = "jdbc:mysql://localhost:3306/spring5fs";
 Connection conn = null;
 PreparedStatement pstmt = null;
 Class.forName("com.mysql.cj.jdbc.Driver");
