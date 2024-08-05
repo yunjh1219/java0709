@@ -34,7 +34,7 @@
 <%
 } else {
 %>
-               <li><a href="login2.jsp">로그인</a></li>
+               <li><a href="login.jsp">로그인</a></li>
 <%
 }
 %>
