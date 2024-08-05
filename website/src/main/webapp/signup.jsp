@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Sing Up</h2>
+        <h2>Sign Up</h2>
         <form action="insert.jsp" method="post">
             <input type="text" name="name" placeholder="이름(id)" maxlength="10" value="">
             <input type="text" name="ssn" placeholder="비번(주민앞)" maxlength="6" value="">
