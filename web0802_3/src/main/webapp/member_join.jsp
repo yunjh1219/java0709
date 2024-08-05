@@ -15,7 +15,7 @@
     Class.forName("com.mysql.cj.jdbc.Driver");
     try ( 
         Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3307/spring5fs", "root", "mysql");
+                "jdbc:mysql://localhost:3306/spring5fs", "spring5", "spring5");
         Statement stmt = conn.createStatement();
         
         // 이미 존재하는 아이디인지 체크하는 쿼리 

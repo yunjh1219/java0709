@@ -6,7 +6,7 @@
     Class.forName("com.mysql.cj.jdbc.Driver");
     try ( 
         Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3307/spring5fs", "root", "mysql");
+                "jdbc:mysql://localhost:3306/spring5fs", "spring5", "spring5");
         Statement stmt = conn.createStatement();
             
             // 지정된 아이디와 비밀번호를 가진 레코드가 있는지 쿼리 

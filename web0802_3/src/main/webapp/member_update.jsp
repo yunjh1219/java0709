@@ -8,7 +8,7 @@
     Class.forName("com.mysql.cj.jdbc.Driver");
     try ( 
         Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3307/spring5fs", "root", "mysql");
+                "jdbc:mysql://localhost:3306/spring5fs", "spring5", "spring5");
         Statement stmt = conn.createStatement();
     ) {
         // 회원 정보 양식에 입력된 값을 DB에 저장
