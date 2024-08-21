@@ -32,7 +32,15 @@ public class BoardController extends HttpServlet {
         String com = uri.substring(conPath.length());
 
         // 주어진 URL에 따라 지정된 동작 수행
-        if (com.equals("/list") || com.equals("/")) {
+        if (com.equals("/")){
+            view = "main.jsp";
+        } 
+        
+        else if (com.equals("/sign")) {
+        	view = "sign-in/signForm.jsp";
+        }
+        
+        else if (com.equals("/list")) {
             String tmp = request.getParameter("page");
             int pageNo = (tmp != null && tmp.length() > 0)
                     ? Integer.parseInt(tmp) : 1;

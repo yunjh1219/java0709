@@ -31,27 +31,26 @@
 	</select>
 
 
-	<select id="countProducts" parameterType="int" resultType="int">
-		SELECT stock FROM products WHERE id = #{id}
+	<select id="countBoard" parameterType="int" resultType="int">
+		SELECT stock FROM products WHERE num = #{num}
 	</select>
 
 
 
-	<insert id="insertProduct" parameterType="com.board.db.BoardDto">
-		INSERT INTO products (name, description, price, stock)
-		VALUES (#{name}, #{description}, #{price}, #{stock})
+	<insert id="insertBoard" parameterType="com.board.db.BoardDto">
+		INSERT INTO board (num, writer, title, content)
+		VALUES (board_seq.nextval, #{writer}, #{title}, #{content})
 	</insert>
 
-	<update id="updateProduct" parameterType="com.board.db.BoardDto">
-		UPDATE products
-		SET name = #{name}, description = #{description}, price = #{price}, stock
-		= #{stock}
-		WHERE id = #{id}
+	<update id="updateBoard" parameterType="com.board.db.BoardDto">
+		UPDATE board
+		SET writer = #{writer}, title = #{title}, content = #{content}
+		WHERE num = #{num}
 	</update>
 
 
 
-	<delete id="deleteProduct" parameterType="int">
-		DELETE FROM products WHERE id = #{id}
+	<delete id="deleteBoard" parameterType="int">
+		DELETE FROM board WHERE num = #{num}
 	</delete>
 </mapper>

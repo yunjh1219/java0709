@@ -64,9 +64,9 @@
 				<label for="content" class="form-label">내용</label>
 				<textarea class="form-control" id="content" rows="3" name="content">${msg.content}</textarea>
 			</div>
-			
-			<br> <input type="submit" value="저장" class="btn btn-outline-primary"> <input
-				type="button" value="취소" onclick="history.back()" class="btn btn-outline-danger">
+			                          
+			<br> <input type="submit" value="저장" class="btn btn-outline-primary" > 
+			<input type="button" value="취소" onclick="history.back()" class="btn btn-outline-danger">
 		</form>
 	</div>
 </body>

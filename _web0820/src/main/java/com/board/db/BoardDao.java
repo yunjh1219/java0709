@@ -53,19 +53,19 @@ public class BoardDao {
 	}
 	
 	
-	public void insertOne(BoardDto product) {
-		session.insert("ProductMapper.insertProduct", product);
+	public void insertOne(BoardDto board) {
+		session.insert("BoardMapper.insertBoard", board);
 	}
 
 	
 
-	public void updateOne(BoardDto product) {
-		session.update("ProductMapper.updateProduct", product);
+	public void updateOne(BoardDto board) {
+		session.update("BoardMapper.updateBoard", board);
 	}
 
-	public boolean deleteOne(int id) {
+	public boolean deleteOne(int num) {
 		try {
-			session.update("ProductMapper.deleteProduct", id);
+			session.update("BoardMapper.deleteBoard", num);
 		} catch(Exception e) {
 			System.out.println("여기!!!");
 			//e.printStackTrace();
@@ -77,7 +77,7 @@ public class BoardDao {
 	
 	
 	
-	public int countProducts(int id) {
-		return session.selectOne("ProductMapper.countProducts", id);
+	public int countProducts(int num) {
+		return session.selectOne("BoardMapper.countBoard", num);
 	}
 }
