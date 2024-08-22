@@ -28,9 +28,9 @@ public class MemberDao {
 		return mm.findMember(memberDto);
 	}
 	
-	public void insertMember(MemberDto memberdto) {
+	public void insertMember(MemberDto memberDto) {
 		MemberMapper mm = session.getMapper(MemberMapper.class);
-		return mm.insertMember(memberDto);
+		mm.insertMember(memberDto);
 	}
 	
 }

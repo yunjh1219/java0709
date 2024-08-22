@@ -68,6 +68,11 @@ public class DuController extends HttpServlet {
         }   else if (com.equals("/signinForm")) {
         	view = "/sign-in/signinForm.jsp";
         } else if (com.equals("/sign-in")) {
+            request.setCharacterEncoding("utf-8");
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            String password = request.getParameter("password");
+
         }
             else if (com.equals("/list")) {
             String tmp = request.getParameter("page");
